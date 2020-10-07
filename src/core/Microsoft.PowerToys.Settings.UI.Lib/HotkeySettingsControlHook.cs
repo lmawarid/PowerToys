@@ -2,6 +2,7 @@
 // The Microsoft Corporation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
+using System;
 using interop;
 
 namespace Microsoft.PowerToys.Settings.UI.Lib
@@ -10,17 +11,20 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 
     public delegate bool IsActive();
 
-    public class HotkeySettingsControlHook
+    public class HotkeySettingsControlHook : IDisposable
     {
         private const int WmKeyDown = 0x100;
         private const int WmKeyUp = 0x101;
         private const int WmSysKeyDown = 0x0104;
         private const int WmSysKeyUp = 0x0105;
 
+#pragma warning disable CA2213 // Disposable fields should be disposed
         private KeyboardHook _hook;
+#pragma warning restore CA2213 // Disposable fields should be disposed
         private KeyEvent _keyDown;
         private KeyEvent _keyUp;
         private IsActive _isActive;
+        private bool disposedValue;
 
         public HotkeySettingsControlHook(KeyEvent keyDown, KeyEvent keyUp, IsActive isActive)
         {
@@ -51,10 +55,24 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
             }
         }
 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // Dispose the KeyboardHook object to terminate the hook threads
+                    _hook.Dispose();
+                }
+
+                disposedValue = true;
+            }
+        }
+
         public void Dispose()
         {
-            // Dispose the KeyboardHook object to terminate the hook threads
-            _hook.Dispose();
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
     }
 }
