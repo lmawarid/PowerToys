@@ -25,7 +25,8 @@ namespace Microsoft.PowerToys.Settings.UI.Lib.CustomAction
             {
                 PropertyNamingPolicy = new CustomNamePolicy((propertyName) =>
                 {
-                    return propertyName.Equals("ModuleAction") ? moduleName : propertyName;
+                    // Using InvariantCulture comparison as this text is internal.
+                    return propertyName.Equals("ModuleAction", System.StringComparison.InvariantCulture) ? moduleName : propertyName;
                 }),
             };
 
