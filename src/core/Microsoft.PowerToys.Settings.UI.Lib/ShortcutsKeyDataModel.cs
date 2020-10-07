@@ -10,11 +10,12 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 {
     public class ShortcutsKeyDataModel
     {
+        // Collection properties should be read-only (CA2227)
         [JsonPropertyName("global")]
-        public List<KeysDataModel> GlobalRemapShortcuts { get; set; }
+        public List<KeysDataModel> GlobalRemapShortcuts { get; }
 
         [JsonPropertyName("appSpecific")]
-        public List<AppSpecificKeysDataModel> AppSpecificRemapShortcuts { get; set; }
+        public List<AppSpecificKeysDataModel> AppSpecificRemapShortcuts { get; }
 
         public ShortcutsKeyDataModel()
         {

@@ -10,8 +10,9 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 {
     public class RemapKeysDataModel
     {
+        // Collection properties should be read-only (CA2227)
         [JsonPropertyName("inProcess")]
-        public List<KeysDataModel> InProcessRemapKeys { get; set; }
+        public List<KeysDataModel> InProcessRemapKeys { get; }
 
         public RemapKeysDataModel()
         {

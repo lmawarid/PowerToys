@@ -10,8 +10,9 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 {
     public class ImageResizerSizes
     {
+        // Collection properties should be read-only (CA2227)
         [JsonPropertyName("value")]
-        public ObservableCollection<ImageSize> Value { get; set; }
+        public ObservableCollection<ImageSize> Value { get; }
 
         public ImageResizerSizes()
         {
