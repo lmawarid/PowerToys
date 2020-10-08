@@ -5,12 +5,12 @@
 using System;
 using System.Globalization;
 using System.Runtime.CompilerServices;
-using Microsoft.PowerToys.Settings.UI.Lib.Helpers;
-using Microsoft.PowerToys.Settings.UI.Lib.Interfaces;
-using Microsoft.PowerToys.Settings.UI.Lib.Utilities;
-using Microsoft.PowerToys.Settings.UI.Lib.ViewModels.Commands;
+using Microsoft.PowerToys.Settings.UI.Libs.Helpers;
+using Microsoft.PowerToys.Settings.UI.Libs.Interfaces;
+using Microsoft.PowerToys.Settings.UI.Libs.Utilities;
+using Microsoft.PowerToys.Settings.UI.Libs.ViewModels.Commands;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib.ViewModels
+namespace Microsoft.PowerToys.Settings.UI.Libs.ViewModels
 {
     public class GeneralViewModel : Observable
     {

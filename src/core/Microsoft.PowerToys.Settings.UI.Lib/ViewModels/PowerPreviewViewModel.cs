@@ -4,10 +4,10 @@
 
 using System;
 using System.Runtime.CompilerServices;
-using Microsoft.PowerToys.Settings.UI.Lib.Helpers;
-using Microsoft.PowerToys.Settings.UI.Lib.Interfaces;
+using Microsoft.PowerToys.Settings.UI.Libs.Helpers;
+using Microsoft.PowerToys.Settings.UI.Libs.Interfaces;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib.ViewModels
+namespace Microsoft.PowerToys.Settings.UI.Libs.ViewModels
 {
     public class PowerPreviewViewModel : Observable
     {

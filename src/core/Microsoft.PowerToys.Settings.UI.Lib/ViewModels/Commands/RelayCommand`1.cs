@@ -5,7 +5,7 @@
 using System;
 using System.Windows.Input;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib.ViewModels.Commands
+namespace Microsoft.PowerToys.Settings.UI.Libs.ViewModels.Commands
 {
     public class RelayCommand<T> : ICommand
     {

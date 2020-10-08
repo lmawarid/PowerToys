@@ -4,9 +4,9 @@
 
 using System;
 using System.Collections.ObjectModel;
-using Microsoft.PowerToys.Settings.UI.Lib;
-using Microsoft.PowerToys.Settings.UI.Lib.Utilities;
-using Microsoft.PowerToys.Settings.UI.Lib.ViewModels;
+using Microsoft.PowerToys.Settings.UI.Libs;
+using Microsoft.PowerToys.Settings.UI.Libs.Utilities;
+using Microsoft.PowerToys.Settings.UI.Libs.ViewModels;
 using Windows.UI.Xaml.Controls;
 
 namespace Microsoft.PowerToys.Settings.UI.Views

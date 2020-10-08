@@ -1,5 +1,5 @@
-﻿using Microsoft.PowerToys.Settings.UI.Lib;
-using Microsoft.PowerToys.Settings.UI.Lib.Interfaces;
+﻿using Microsoft.PowerToys.Settings.UI.Libs;
+using Microsoft.PowerToys.Settings.UI.Libs.Interfaces;
 using Moq;
 using System;
 

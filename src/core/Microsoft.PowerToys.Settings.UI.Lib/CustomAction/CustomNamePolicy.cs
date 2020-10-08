@@ -5,7 +5,7 @@
 using System;
 using System.Text.Json;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib.CustomAction
+namespace Microsoft.PowerToys.Settings.UI.Libs.CustomAction
 {
     public class CustomNamePolicy : JsonNamingPolicy
     {

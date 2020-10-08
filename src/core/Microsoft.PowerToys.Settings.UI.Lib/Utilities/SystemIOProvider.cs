@@ -4,7 +4,7 @@
 
 using System.IO;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib.Utilities
+namespace Microsoft.PowerToys.Settings.UI.Libs.Utilities
 {
     public class SystemIOProvider : IIOProvider
     {

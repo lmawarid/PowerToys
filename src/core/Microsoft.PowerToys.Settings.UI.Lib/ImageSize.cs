@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib
+namespace Microsoft.PowerToys.Settings.UI.Libs
 {
     public class ImageSize : INotifyPropertyChanged
     {

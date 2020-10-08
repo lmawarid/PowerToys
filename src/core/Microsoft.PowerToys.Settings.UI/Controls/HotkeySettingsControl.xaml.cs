@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information.
 
 using System;
-using Microsoft.PowerToys.Settings.UI.Lib;
+using Microsoft.PowerToys.Settings.UI.Libs;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -139,7 +139,7 @@ namespace Microsoft.PowerToys.Settings.UI.Controls
         {
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
-                KeyEventHandler(key, true, key, Lib.Utilities.Helper.GetKeyName((uint)key));
+                KeyEventHandler(key, true, key, Libs.Utilities.Helper.GetKeyName((uint)key));
                 if (internalSettings.Code > 0)
                 {
                     lastValidSettings = internalSettings.Clone();

@@ -7,9 +7,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using Microsoft.PowerToys.Settings.UI.Lib.CustomAction;
+using Microsoft.PowerToys.Settings.UI.Libs.CustomAction;
 
-namespace Microsoft.PowerToys.Settings.UI.Lib.Utilities
+namespace Microsoft.PowerToys.Settings.UI.Libs.Utilities
 {
     public static class Helper
     {
