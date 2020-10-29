@@ -88,8 +88,6 @@
     <Compile Include="..\..\codeAnalysis\GlobalSuppressions.cs">
       <Link>GlobalSuppressions.cs</Link>
     </Compile>
-    <Compile Include="Activation\ActivationHandler.cs" />
-    <Compile Include="Activation\DefaultActivationHandler.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -110,7 +108,6 @@
     <Compile Include="Helpers\ResourceExtensions.cs" />
     <Compile Include="ICoreWindowInterop.cs" />
     <Compile Include="Interop.cs" />
-    <Compile Include="Services\ActivationService.cs" />
     <Compile Include="Services\NavigationService.cs" />
     <Compile Include="ViewModels\Commands\ButtonClickCommand.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
